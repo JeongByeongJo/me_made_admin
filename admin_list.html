@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .avatar {
+            width         : 2em;
+            height        : 2em;
+            border-radius : 100%;
+            outline       : none;
+            /* position      : absolute; */
+            top           : 0;
+            left          : 0;
+            /* filter        : grayscale(100%); */
+            transition    : all 0.3s ease-in-out;
+        }
+        .icon-size {
+            width         : 2em;
+            height        : 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="padding: 1em;">
+            <div class="col" style="text-align: left;">
+                <p style="align-content: end;">Admin</p> 
+            </div>
+            <div class="col" style="text-align: right;">
+                <a href=""><img src="img/light_mode_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="icon-size"></a> 
+                <a href=""><img src="img/apps_60dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg" class="icon-size"></a> 
+                <a href=""><img src="img/user-08.jpg" class="avatar"></a> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/home_16dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg"> Home</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/notifications_16dp_5F6368_FILL0_wght400_GRAD0_opsz48.svg"> 공지사항</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/group_NaNdp_5F6368_FILL0_wght400_GRAD0_opsz48.svg"> 회원관리</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/desktop_windows_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg"> 서비스관리</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/chat_bubble_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg"> 커뮤니케이션</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/settings_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg"> 시스템관리</a>
+                        <div class="list-group">
+                         <!-- <ul><li>코드관리</li><li>코드그룹관리</li></ul> -->
+                         <a href="#" class="list-group-item list-group-item-action"> 코드관리</a>
+                         <a href="#" class="list-group-item list-group-item-action"> 코드그룹관리</a>
+                        </div>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/person_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg"> 개인정보관리</a>
+                    <a href="#" class="list-group-item list-group-item-action"><img src="img/stacks_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg"> test</a>
+                    
+                  </div>
+            </div>
+            <div class="col" style="padding-inline: 3em;">
+                <div class="row">
+                    <div class="col">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="text-align: left;">
+                        <h1>Code</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>N</option>
+                            <option value="1">Y</option>                            
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Y</option>
+                            <option value="1">N</option>                            
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>날짜</option>
+                            <option value="1">Y</option>                            
+                        </select>
+                    </div>
+                    <div class="col">
+                        <form>
+                            <input type="date">
+                        </form>
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                 &nbsp; 코드그룹<span style="color: red;"><sup>*</sup></span>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>선택하세요</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                &nbsp; 코드<span style="color: red;"><sup>*</sup></span>
+                                <input type="text" class="form-control" id="" placeholder="자동생성" disabled>                                 
+                            </div>
+                            <div class="col">                                
+                                &nbsp; 코드 (ANOTHER)
+                                <input type="text" class="form-control" id="" placeholder="영어소문자, 숫자">
+                            </div>
+                            <div class="col">
+                                &nbsp; 코드 이름<span style="color: red;"><sup>*</sup></span>
+                                <input type="text" class="form-control" id="" placeholder="한글, 영대소문자, 숫자">
+                            </div>
+                            <div class="col">
+                                &nbsp; 코드 이름 (영문)<span style="color: red;"><sup>*</sup></span>
+                                <input type="text" class="form-control" id="" placeholder="영대소문자, 숫자">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                 &nbsp; 사용여부<span style="color: red;"><sup>*</sup></span>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>사용</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                &nbsp; 순서<span style="color: red;"><sup>*</sup></span>
+                                <input type="text" class="form-control"> 
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                 &nbsp; 설명
+                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="col"></div>                           
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                &nbsp; 다국어1
+                                <input type="text" class="form-control">                                 
+                            </div>
+                            <div class="col"">                                
+                                &nbsp; 다국어2
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 다국어3
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col"">
+                                &nbsp; 다국어4
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                &nbsp; 다국어5
+                                <input type="text" class="form-control">                                 
+                            </div>
+                            <div class="col">                                
+                                &nbsp; 다국어6
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 다국어7
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 다국어8
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                &nbsp; 예비1 (VARCHAR TYPE)
+                                <input type="text" class="form-control">                                 
+                            </div>
+                            <div class="col">                                
+                                &nbsp; 예비2 (VARCHAR TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 예비3 (VARCHAR TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 예비4 (VARCHAR TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 1em;">
+                            <div class="col">
+                                &nbsp; 예비1 (INT TYPE)
+                                <input type="text" class="form-control">                                 
+                            </div>
+                            <div class="col">                                
+                                &nbsp; 예비2 (INT TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 예비3 (INT TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                &nbsp; 예비4 (INT TYPE)
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 1em;">
+                            <div class="col" style="text-align: left;">
+                                <button type="button" class="btn btn-outline-secondary"><img src="img/list_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" class="icon-size" style="border: 5em;"></button>
+                                
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <button type="button" class="btn btn-primary"><img src="img/database_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" class="icon-size" style="border: 5em;"></button>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            
+                
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
